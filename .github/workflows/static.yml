@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniSquishy - Apresentação</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        /* Gradientes e animações */
+        .bg-gradient {
+            background: linear-gradient(90deg, #1d4ed8, #3b82f6);
+        }
+        .hover-zoom:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            cursor: pointer;
+            z-index: 10;
+            background: linear-gradient(135deg, #f43f5e, #ec4899);
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        /* Navbar fixa e ativa */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 50;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a.active {
+            color: #1d4ed8;
+            font-weight: bold;
+        }
+        .team-photo:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="navbar flex justify-between items-center p-4">
+        <h1 class="text-xl font-bold text-blue-500">UniSquishy</h1>
+        <ul class="flex space-x-6">
+            <li><a href="#top" class="text-gray-700 hover:text-blue-500 active">Início</a></li>
+            <li><a href="#sobre" class="text-gray-700 hover:text-blue-500">Sobre Nós</a></li>
+            <li><a href="#publicacoes" class="text-gray-700 hover:text-blue-500">Publicações</a></li>
+            <li><a href="#contato" class="text-gray-700 hover:text-blue-500">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg bg-gradient p-12 text-center text-white">
+        <img src="https://lh6.googleusercontent.com/O5Tpjs0FgZvN2x31RuzUX43G27SH1pnEfbECSDqvW0PLBZs_bjAjfnms1Evtxmc7AjVtU-Z9xEnYC_Itp7t1KWg=w1280" alt="Logo" class="rounded-full w-32 mx-auto mb-4">
+        <h1 class="text-4xl font-bold">Bem-vindo a UniSquishy</h1>
+        <p class="text-lg mt-4">Desenvolvemos produtos para ajudar a reduzir o estresse acadêmico.</p>
+    </header>
+
+    <main id="top" class="p-6">
+  <!-- Sobre Nós -->
+<section id="sobre" class="max-w-5xl mx-auto mb-12 bg-white text-black rounded-lg shadow-lg p-8">
+    <h1 class="text-4xl font-bold mb-6 text-center">Sobre Nós</h1>
+    <p class="text-lg text-gray-700 text-center mb-8">
+        UniSquishy é uma empresa focada em promover o bem-estar dos estudantes universitários,
+        desenvolvendo produtos e serviços inovadores para ajudar a reduzir o estresse acadêmico.
+        <br><br>
+        Nossa missão é fornecer ferramentas práticas que ajudem os estudantes a reduzir o stress e
+        melhorar sua salute mental durante os anos acadêmicos.
+        <br><br>
+        Nossa equipe de desenvolvimento e design especializados trabalha para criar produtos
+        inovadores que ajudam os estudantes a se concentrar e se divertir durante o dia acadêmico.
+        <br>
+    </p>
+    
+    <!-- Foto da Equipa Principal -->
+    <div class="flex justify-center mb-12">
+        <img src="https://lh5.googleusercontent.com/IwhBoLeKDrKyJ5yOfFMPTO6ZV6IET3IzfMKeG9MRkDtKiZFBOpNF4aa8JBHyo2ATrLVP2J1YmsgOac6cB1s_Zm9s_GpUL_2g6Q1A_ZRTzYGQYWYOXuICaw78IXLjvbmAFQ=w1280" alt="Equipa UniSquishy" 
+             class="rounded-lg shadow-lg max-w-full md:max-w-2xl border-4 border-blue-500">
+    </div>
+    <!-- Blocos Individuais dos Membros da Equipa -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Membro 1 -->
+        <div class="bg-gray-100 p-4 rounded-lg shadow-lg text-center">
+            <img src="https://lh5.googleusercontent.com/n2H8vNYgRG6HrLJsbJeFJSVdN60nTnt4YcX215ll_1ZcOBFEv8607qrgjRgQF3O3lVG1Zs1U_fG_5busC73GAXc=w1280" alt="Membro 1"
+                 class="rounded-full mx-auto w-24 h-24 border-4 border-blue-500 mb-4">
+            <h3 class="text-lg font-bold text-blue-500">João Almeida</h3>
+            <p class="text-sm text-gray-700">Encarregado do desenvolvimento digital, incluindo o design do site, materiais visuais e apresentações.</p>
+        </div>
+
+        <!-- Membro 2 -->
+        <div class="bg-gray-100 p-4 rounded-lg shadow-lg text-center">
+            <img src="https://lh4.googleusercontent.com/7x9vH9NknC4lkl2ROPz5QHObhBahrC0FcFnQZX6UGpxKTy7_37WiRetggZaxCvgrqpKBNRWpWfjCN0kW8Bkf1g=w1280" alt="Membro 2" 
+                 class="rounded-full mx-auto w-24 h-24 border-4 border-blue-500 mb-4">
+            <h3 class="text-lg font-bold text-blue-500">Fábio Simões</h3>
+            <p class="text-sm text-gray-700">Responsável por explorar oportunidades de mercado e estruturar estratégias comerciais.</p>
+        </div>
+
+        <!-- Membro 3 -->
+        <div class="bg-gray-100 p-4 rounded-lg shadow-lg text-center">
+            <img src="https://lh4.googleusercontent.com/T9Cc8jUe56Qo1ddX5RcTnZf6a5vbt8Gt6822u9pvFxhpIJugbuPli7I96AvSB74eRApzXiI7wmCyTtexwHhX6wOasUHhMBSpkb_7zYEIk7UDXiTo0tqmZOXQwbo1SrSYQA=w1280" alt="Membro 3" 
+                 class="rounded-full mx-auto w-24 h-24 border-4 border-blue-500 mb-4">
+            <h3 class="text-lg font-bold text-blue-500">Izadora Percego</h3>
+            <p class="text-sm text-gray-700">Responsável pela criação de materiais promocionais e suporte em comunicações institucionais..</p>
+        </div>
+    </div>
+</section>
+                <!-- Publicações -->
+<section id="publicacoes" class="max-w-5xl mx-auto mb-12 bg-white rounded-lg shadow-lg p-8">
+    <h2 class="text-3xl font-bold text-blue-700 mb-4">Publicações</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-gray-50 p-6 rounded-lg hover-zoom">
+            <h3 class="text-xl font-semibold text-blue-500">Comunicado 1</h3>
+            <p class="text-gray-600 mt-2">UniSquishy está a lançar uma linha de stress balls personalizadas.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-gray-50 p-6 rounded-lg hover-zoom">
+            <h3 class="text-xl font-semibold text-blue-500">Comunicado 2</h3>
+            <p class="text-gray-600 mt-2">Parcerias com universidades para reduzir o estresse acadêmico.</p>
+        </div>
+    </div>
+
+    <!-- Vídeo de Apresentação -->
+    <div class="mt-8">
+        <h3 class="text-2xl font-semibold text-blue-500 mb-4">Vídeo de Apresentação</h3>
+        <div class="relative overflow-hidden rounded-lg shadow-lg max-w-4xl mx-auto bg-black">
+            <!-- Substitua o link abaixo pelo URL do vídeo do YouTube ou insira o caminho para o arquivo local -->
+            <iframe 
+                src="https://www.youtube.com/embed/VIDEO_ID" 
+                title="Vídeo de Apresentação" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen
+                class="w-full h-[315px] sm:h-[400px] md:h-[500px]"></iframe>
+        </div>
+    </div>
+</section>
+<!-- Secção de Downloads de PDFs -->
+<section id="downloads" class="max-w-5xl mx-auto mb-12 bg-white rounded-lg shadow-lg p-8">
+    <h2 class="text-3xl font-bold text-blue-700 mb-4">Downloads</h2>
+    <p class="text-gray-600 mb-6">Aqui pode acessar e baixar materiais em PDF relacionados ao projeto.</p>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Exemplo de PDF 1 -->
+        <div class="bg-gray-50 p-4 rounded-lg shadow text-center">
+            <h3 class="text-lg font-bold text-blue-500">Relatório</h3>
+            <p class="text-sm text-gray-700 mb-2">Relatório do Projeto detalhado.</p>
+            <a href="caminho/para/documento1.pdf" target="_blank" class="text-blue-600 font-semibold hover:underline">
+                Baixar PDF
+            </a>
+        </div>
+        
+        <!-- Exemplo de PDF 2 -->
+        <div class="bg-gray-50 p-4 rounded-lg shadow text-center">
+            <h3 class="text-lg font-bold text-blue-500">Apresentação</h3>
+            <p class="text-sm text-gray-700 mb-2">Apresentação do projeto.</p>
+            <a href="file:///C:/Users/joaop/Downloads/Apresenta%C3%A7%C3%A3o%20UniSquishy.pdf" target="_blank" class="text-blue-600 font-semibold hover:underline">
+                Baixar PDF
+            </a>
+        </div>
+
+        <!-- Exemplo de PDF 3 -->
+        <div class="bg-gray-50 p-4 rounded-lg shadow text-center">
+            <h3 class="text-lg font-bold text-blue-500">Press Release</h3>
+            <p class="text-sm text-gray-700 mb-2">Resumo do projeto.</p>
+            <a href="caminho/para/documento3.pdf" target="_blank" class="text-blue-600 font-semibold hover:underline">
+                Baixar PDF
+            </a>
+        </div>
+    </div>
+</section>
+        <!-- Fale Connosco -->
+        <section id="contato" class="max-w-5xl mx-auto mb-12 bg-white rounded-lg shadow-lg p-8">
+            <h2 class="text-3xl font-bold text-blue-700 mb-4">Fale Connosco</h2>
+            <form class="space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="nome" class="font-semibold">Nome</label>
+                        <input type="text" id="nome" name="nome" class="block w-full p-2 border border-gray-300 rounded" required>
+                    </div>
+                    <div>
+                        <label for="telefone" class="font-semibold">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" class="block w-full p-2 border border-gray-300 rounded" required>
+                    </div>
+                </div>
+                <div>
+                    <label for="mensagem" class="font-semibold">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" class="block w-full p-2 border border-gray-300 rounded" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="bg-gradient-to-r from-blue-500 to-blue-700 text-white px-6 py-2 rounded">Enviar</button>
+            </form>
+       <!-- Google Maps -->
+<div class="mt-8">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.920473163774!2d-8.444994823285574!3d40.57441500748511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd230f34d385819b%3A0x9e9f89cf471548e!2sESTGA%20-%20Escola%20Superior%20de%20Tecnologia%20e%20Gest%C3%A3o%20de%20%C3%81gueda!5e0!3m2!1spt-PT!2spt!4v1700000000000!5m2!1spt-PT!2spt" 
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+        </section>
+    <!-- Botão "Voltar ao Topo" -->
+    <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script>
+        // Adiciona classe "active" ao link da seção visível
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.navbar a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 70; // Ajusta para a navbar fixa
+                if (pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
